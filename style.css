@@ -1,0 +1,37 @@
+body {
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    float: right;
+    font-size: 0;
+    color: #E5E5E5;
+    margin: 10px;
+}
+
+label::before {
+    content: "\f005";
+    font-family: 'Font Awesome 5 free';
+    font-size: 60px;
+}
+
+label:hover,  label:hover~label {
+    color: #FCA311;
+    transition: 0.8s;
+    font-weight: 900;
+}
+
+.active {
+    color: #FCA311;
+    font-weight: 900;
+}
