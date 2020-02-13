@@ -1,11 +1,26 @@
+html,
 body {
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     background-color: #FFFFFF;
 }
 
+.container{
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+p{
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: 600;
+    color: darkslategrey;
+}
+
 .center {
     width: 100vw;
-    height: 100vh;
+    height: 40vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -24,7 +39,7 @@ label {
 label::before {
     content: "\f005";
     font-family: 'Font Awesome 5 free';
-    font-size: 6vw;
+    font-size: 8vh;
 }
 
 label:hover,  label:hover~label {

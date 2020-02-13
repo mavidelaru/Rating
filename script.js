@@ -9,6 +9,8 @@ function clearRates() {
     for(var i=1; i<=5; i++) {
         document.getElementById("star" +i).classList.remove("active");
     }
+
+    document.getElementById("text-area").innerHTML="Please, rate our service";
 }
 
 //Aqui añadimos el color a las estrellas - Add Active
@@ -16,6 +18,8 @@ function addRates(value) {
     for(var i=1; i<=value; i++) {
         document.getElementById("star" +i).classList.add("active");
     }
+
+    document.getElementById("text-area").innerHTML="Thank you!";
 }
 
  //capturo cualquier click en cualquier sitio 
